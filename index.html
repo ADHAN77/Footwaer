@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTWEAR</title>
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <style>
+        header {
+            z-index: 1;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(23, 30, 37);
+        }
+
+        body {
+            background-color: rgba(0, 101, 252, 0.164);
+        }
+        
+        section{
+            padding-top: 185px;
+        }
+
+        .navbar img {
+            width: 150px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .carousel-caption h2 {
+            color: rgb(255, 251, 0);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .col-md-4{
+            margin-bottom: 16px;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+        }
+
+            #sobre img p{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #rodape {
+                background-color: rgb(23, 30, 37);
+                padding: 20px;
+                color: white;
+                text-align: center;
+                margin-top: 16px;
+            }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./IMAGENS/Sem-Título-1.png">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destaque">Destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <div class="container">
+            <section id="destaque">
+                <h2>Destaque</h2>
+                <div id="carousel-exemplo" class="carousel  slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./IMAGENS/feet-1840619.jpg">
+                            <div class="carousel-caption">
+                                <h2>648 Vendas</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./IMAGENS/shoes-atual.png">
+                            <div class="carousel-caption">
+                                <h2>578 Vendas</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./IMAGENS/shoes-commt2.png">
+                            <div class="carousel-caption">
+                                <h2>703 Vendas</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+                </div>
+            </section>
+            <section id="produtos">
+                <h2>Produtos</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/jonathan-pagaoa.png ">
+                            <div class="card-body">
+                                <h4>Adidas Pagaoa</h4>
+                                <h6>R$350,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/Nike-feet.png ">
+                            <div class="card-body">
+                                <h4>Nike Feet</h4>
+                                <h6>R$299,90</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/madvortex.png ">
+                            <div class="card-body">
+                                <h4>Jordan Madvortex</h4>
+                                <h6>R$578,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/abdullah-alsaibaie.png ">
+                            <div class="card-body">
+                                <h4>Nike Alsaibaie</h4>
+                                <h6>R$620,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/jd-danny.png ">
+                            <div class="card-body">
+                                <h4>Jordan Danny</h4>
+                                <h6>R$489,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/La-piedra.png ">
+                            <div class="card-body">
+                                <h4>La Piedra</h4>
+                                <h6>R$179,99</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/melvin-buezo.png ">
+                            <div class="card-body">
+                                <h4>Nike Melvin</h4>
+                                <h6>R$232,75</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/Al-stars-DC.png ">
+                            <div class="card-body">
+                                <h4>Al-Stars DC</h4>
+                                <h6>R$159,90</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/mstudio.png ">
+                            <div class="card-body">
+                                <h4>Al-stars mstudio</h4>
+                                <h6>R$85,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/ox-street.png ">
+                            <div class="card-body">
+                                <h4>Ox Street</h4>
+                                <h6>R$238,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/pexels-web-donut-19090.png ">
+                            <div class="card-body">
+                                <h4>Donut slik</h4>
+                                <h6>R$78,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/ray-piedra.png ">
+                            <div class="card-body">
+                                <h4>Nike Ray-sport</h4>
+                                <h6>R$478,90</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/sapatenis-joy.png ">
+                            <div class="card-body">
+                                <h4>Nike Joy</h4>
+                                <h6>R$225,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/shoes.png">
+                            <div class="card-body">
+                                <h4>Robust Aventura</h4>
+                                <h6>R$260,00</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="card text-bg-dark">
+                            <img src="./IMAGENS/produtos/Nike-mnz.png">
+                            <div class="card-body">
+                                <h4>Nike MNZ</h4>
+                                <h6>R$589,50</h6>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <p>Bem-vindos a Footwear, a sua nova casa para os calçados mais elegantes, modernos e confortáveis. Aqui, acreditamos que cada passo que você dá deve ser uma expressão de estilo pessoal e um conforto inigualável. Nossa loja é mais do que um lugar para comprar sapatos; é um espaço onde a moda encontra a funcionalidade, e onde os seus pés encontram o par perfeito.
+
+                    Nossa paixão por calçados transcende simplesmente as tendências da moda. A cada coleção cuidadosamente selecionada, buscamos oferecer uma gama diversificada de estilos que atendam a todas as ocasiões. Seja para um evento formal, uma aventura casual ou um dia agitado no trabalho, temos o sapato certo para você.
+                    
+                    Na Footwear, acreditamos que qualidade é essencial. É por isso que trabalhamos com marcas renomadas e artesãos talentosos que compartilham a nossa visão de excelência. Cada par de sapatos é criado com atenção aos detalhes, utilizando os melhores materiais para garantir durabilidade, conforto e estilo duradouro.
+                    
+                    Nossa equipe experiente está sempre pronta para ajudar a encontrar o sapato perfeito para complementar o seu estilo pessoal. Quer você esteja procurando por algo clássico e sofisticado, ou por algo ousado e fora do comum, estamos comprometidos em superar as suas expectativas.
+                    
+                    Além de oferecer uma ampla seleção de calçados de alta qualidade, também acreditamos em tornar a sua experiência de compra o mais conveniente possível. Navegue pela nossa loja com facilidade, faça compras online ou visite a nossa loja física para receber um atendimento personalizado.
+                    
+                    Na Footwear, estamos empolgados em fazer parte da sua jornada de estilo. Junte-se a nós enquanto celebramos a beleza dos calçados que transcendem a moda, criando passos confiantes em direção à elegância e conforto. Seus pés merecem o melhor, e é isso que estamos aqui para oferecer. Bem-vindo a Footwear, onde cada passo é uma afirmação de quem você é.</p>
+                    <img class="d-block w-100" src="./IMAGENS/LOJA.jpg" />
+            </section>
+        </div>
+    </div>
+    <footer id="rodape">
+        &copy;FOOTWEAR-2023
+    </footer>
+
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
